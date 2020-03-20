@@ -1,9 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
+import { doSomething, successCallback, failureCallback } from '../data/data.js'
 
 const AddTodo = ({ dispatch }) => {
-  let input
+  let input;
+
+  (function() {
+    doSomething()
+    .then(successCallback, failureCallback)
+    .then(result => {
+      result.forEach(item => {
+        dispatch(addTodo(item))
+      });
+    });
+  })()
 
   return (
     <div>
