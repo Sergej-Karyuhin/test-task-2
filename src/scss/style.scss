@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: sans-serif;
+  user-select: none;
+}
+
+
+$gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+.wrapper {
+  width: 315px;
+  height: 75px;
+  margin: 50px 0 0 50px;
+
+  .button {
+    width: 100px;
+    height: 35px;
+    margin-right: 5px;
+    border: 0;
+    background: $gradient;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .li {
+    width: 304px;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+  }
+}
+
+
+.form {
+  display: flex;
+  margin-bottom: 5px;
+
+  .input {
+    width: 210px;
+    height: 35px;
+    border: 0;
+    background-color: #94a7eb;
+    color: white;
+  }
+}
