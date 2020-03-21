@@ -22,9 +22,9 @@ export default class AppProvider extends React.Component {
   }
 
   render() {
-    if (!this.state.rehydrated) {
-      return <div>Loading...</div>
-    }
+    // if (!this.state.rehydrated) {
+    //   return <div>Loading...</div>
+    // }
 
     return (
       <Provider store={store}>

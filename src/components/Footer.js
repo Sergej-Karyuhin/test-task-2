@@ -2,6 +2,11 @@ import React from 'react'
 import FilterLink from '../containers/FilterLink'
 import { VisibilityFilters } from '../actions'
 
+function clear() {
+  localStorage.clear();
+  window.location.reload();
+}
+
 const Footer = () => (
   <div>
     <FilterLink filter={VisibilityFilters.SHOW_ALL}>
@@ -13,6 +18,11 @@ const Footer = () => (
     <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
       Неактивные
     </FilterLink>
+    <button
+      className={'button localStorage-button'}
+      onClick={() => clear()}
+    >Очистить<
+    /button>
   </div>
 )
 

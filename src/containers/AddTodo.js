@@ -30,7 +30,7 @@ const AddTodo = ({ dispatch }) => {
       }}>
         <input ref={node => input = node} className="input" />
         <button type="submit" className="button">
-          Добавить квест
+          Добавить
         </button>
       </form>
     </div>

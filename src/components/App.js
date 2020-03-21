@@ -7,8 +7,8 @@ import '../scss/style.scss';
 const App = () => (
   <div className="wrapper">
     <AddTodo />
-    <VisibleTodoList />
     <Footer />
+    <VisibleTodoList />
   </div>
 )
 

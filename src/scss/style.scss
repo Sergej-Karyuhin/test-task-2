@@ -29,6 +29,11 @@ $gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0
     cursor: pointer;
   }
 
+  .localStorage-button {
+    width: 310px;
+    margin-top: 6px;
+  }
+
   .li {
     width: 304px;
     margin-bottom: 5px;
@@ -36,6 +41,10 @@ $gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0
     color: white;
     cursor: pointer;
     list-style: none;
+  }
+
+  .li:first-child {
+    margin-top: 6px;
   }
 }
 
