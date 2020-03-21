@@ -1,4 +1,4 @@
-let nextTodoId = 0
+let nextTodoId = Math.floor(Math.random() * Math.floor(10000))
 export const addTodo = text => ({
   type: 'ADD_TODO',
   id: nextTodoId++,
